@@ -17,119 +17,187 @@
 
 	<body class="text-center">
 
-		<div class="bg-secondary">
+		<div class="bg-secondary fixed-top">
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link active text-light" href="#">Home</a>
+					<a class="nav-link active text-light" href="#top">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">About Me</a>
+					<a class="nav-link text-light" href="#aboutme">About Me</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Projects</a>
+					<a class="nav-link text-light" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Contact Me</a>
+					<a class="nav-link text-light" href="#tools">Tools</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-light" href="#contact">Contact Me</a>
 				</li>
 			</ul>
 		</div>
 
-		<div class="text-center mt-5" id="bg-image">
+		<div class="text-center mt-5 rows d-flex-row d-flex-md-column" id="aboutme">
 			<img width="400" src="https://media.istockphoto.com/id/1363246495/photo/angry-office-worker-shouting-at-the-computer.jpg?s=612x612&w=0&k=20&c=n-fqA7YNtVFccdMI7t-tdn9-Ts5SiKe6oaMGBPDlSEY=" class="rounded-circle img-fluid"/>
 			<h1 class="mt-5">Cedrick Glory</h1>
 			<h2>web developer</h2>
 			<p class="container text-center">A Full Stack Web Developer is a skilled computer programmer who handles both front and back end coding. At the front end, the developer will use a combination of CSS, HTML, and JavaScript for building everything that a user sees or interacts with on a website, and on the back-end, these web developers will develop server, application, and databases which frame the website foundational structure.</p>
 		</div>
 
-
-
-
-		<h2 class="text-center mt-5">Projects</h2>
-		<!-- <div class="d-flex d-md-flex justify-content-center flex-column flex-md-row rows container-fluid bg-secondary">
-		    
-		    <div class="p-3 flex-sm-column col-md-4">
-		        <img src="https://jilt.com/wp-content/uploads/2019/04/amazon-blankhome.png" class="img-fluid" style="max-width: 100%; height: auto;">
-		        <h5 class="text-light">E-commerce</h5>
-		        <p class="text-light">Amazon.com, Inc. (/ˈæməzɒn/ AM-ə-zon) is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It has been referred to as "one of the most influential economic and cultural forces in the world", and is one of the world's most valuable brands.</p>
-		    </div>
-		    		    
-		    <div class="p-3 flex-sm-column col-md-4">
-		        <img src="https://cdn.dribbble.com/users/850106/screenshots/4495136/media/99bf4015a979abab4b2689c17b884ef4.png?compress=1&resize=400x300" class="img-fluid" style="max-width: 100%; height: auto;">
-		        <h5 class="text-light">Online Social Media Platform</h5>
-		        <p class="container text-center text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    </div> -->
-
-	    <div class="row p-5 bg-secondary justify-content-center">
-	    	<div class="card col-md-3 p-3 bg-dark" style="width: 18rem;">
-		    	<img src="https://i.pinimg.com/originals/e3/ad/3a/e3ad3a38b788283539623f7232af1189.jpg" class="card-img-top">
+		<!-- Projects start -->
+		<h2 class="text-center mt-5" id="projects">Projects</h2>
+		
+	    <div class="card-deck p-5 bg-secondary justify-content-center">
+	    	<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+		    	<a href="https://www.amazon.com/" target="_blank"><img src="https://i.pinimg.com/originals/e3/ad/3a/e3ad3a38b788283539623f7232af1189.jpg" class="card-img-top"></a>
 		    	<div class="card-body text-light">
-		    		<h5>E-commerce</h5>
-		    		<p>Amazing.com, Inc. (/əˈmāziNG/) is an Mercury universal technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It has been referred to as "one of the most influential economic and cultural forces in the world", and is one of the world's most valuable brands.</p>
+		    		<h5 class="card-title">E-commerce</h5>
+		    		<p class="card-text">Amazing.com, Inc. (/əˈmāziNG/) is a Mercurian universal technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.</p>
     			</div>
 			</div>
 
-			<div class="card col-md-3 p-3 ml-5 mr-5 bg-dark" style="width: 18rem;">
-		    	<img src="https://cdn.dribbble.com/users/850106/screenshots/4495136/media/99bf4015a979abab4b2689c17b884ef4.png?compress=1&resize=400x300">
+			<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+		    	<a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.dribbble.com/users/850106/screenshots/4495136/media/99bf4015a979abab4b2689c17b884ef4.png?compress=1&resize=400x300" class="card-img-top"></a>
 		    	<div class="card-body text-light">
-		    		<h5>Online Social Media Platform</h5>
-		    		<p>Fakebook is an online social media and social networking service owned by Martian company LaMeta Platforms.</p>
+		    		<h5 class="card-title">Online Social Media Platform</h5>
+		    		<p class="card-text">Fakebook is an online social media and social networking service owned by Martian company LaMeta Platforms.</p>
     			</div>
 			</div>
 
-			<div class="card col-md-3 p-3 bg-dark" style="width: 18rem;">
-		    	<img src="https://i.pinimg.com/originals/41/f0/6e/41f06ef73c50b9771360dc1a858750fd.jpg" class="card-img-top">
+			<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+		    	<a href="https://www.netflix.com/browse" target="_blank"><img src="https://i.pinimg.com/originals/41/f0/6e/41f06ef73c50b9771360dc1a858750fd.jpg" class="card-img-top"></a>
 		    	<div class="card-body text-light">
-		    		<h5>Online Video Streaming</h5>
-		    		<p>Nextfix, Inc. is a Universal subscription streaming service and production company based in planet Venus, Milkyway Galaxy.</p>
+		    		<h5 class="card-title">Online Video Streaming</h5>
+		    		<p class="card-text">Nextfix, Inc. is a Universal subscription streaming service and production company based in planet Venus, Milkyway Galaxy.</p>
     			</div>
 			</div>
 	    </div>
-
-		    
-		    	    
-		    <!-- <div class="p-3 flex-sm-column col-md-4">
-		        <img src="https://i.pinimg.com/originals/41/f0/6e/41f06ef73c50b9771360dc1a858750fd.jpg" class="img-fluid" style="max-width: 100%; height: auto;">
-		        <h5 class="text-light">Online Video Streaming</h5>
-		        <p class="text-light">Nextfix, Inc. is an American subscription streaming service and production company based in Mars, Milkyway Galaxy.</p> -->
-		    
-		    
-
+	    <!-- Projects end -->
+		
+	    <!-- Tools start-->
+		<div class="bg-light row flex-column jumbotron" id="tools">
+			<h1 class="text-center">Tools</h1>
+			<div class="row justify-content-center py-3">
+				<div class="col-md-3 col-lg-2 mx-4 my-3">
+					<h3 class="text-center my-3">Front End</h3>
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<img src="images/logo-html5.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-css3.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-bootstrap.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-javascript.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-2 mx-4 my-3">
+					<h3 class="text-center my-3">MERN</h3>
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<img src="images/logo-mongodb.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-expressjs.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-react.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-nodejs.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-2 mx-4 my-3">
+					<h3 class="text-center my-3">Other Tools</h3>
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<img src="images/logo-heroku.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-git.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-postman.png" class="img-fluid">
+						</div>
+						<div class="col-6">
+							<img src="images/logo-sublime-text-3.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- Tools End -->
 
-		<h3 class="mt-5">Tools</h3>
+		<!-- Contact start -->
+		<div class="row flex-column jumbotron" id="contact">
+			<div class="row justify-content-center py-3 bg-secondary">
+				<div class="col-md-6 col-lg-4 my-3">
+					<h4 class="text-center">Get in touch</h4>
+					<div class="row justify-content-center">
+						<div class="col-md-12 py-2">
+							<a href="https://www.facebook.com/" target="_blank"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" class="img-fluid"></a>
+						</div>
+						<div class="col-md-12 py-2">
+							<a href="https://ph.linkedin.com/" target="_blank"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" class="img-fluid"></a>
+						</div>
+					</div>
+				</div>
 
+				<div class="col-md-6 col-lg-4 my-3">
+					<form>
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea class="form-control" id="message" rows="3"></textarea>
+						</div>
+						
+						<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for reaching out!</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body text-dark">
+										<p>Message Successfully Sent</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- contact end -->
+		
 		<div>
-		    <div>
-		        <img width="150" src="images/logo-html5.png"/>
-		    </div>
-		    <div>
-		        <img width="150" src="images/logo-css3.png"/>
-		        <img width="150" src="images/logo-javascript.png"/>
-		    </div>
-		</div>
-
-		<div class="d-flex flex-row flex-md-column">
-		    <div>
-		        <img width="150" src="images/logo-mongodb.png"/>
-		        <img width="150" src="images/logo-nodejs.png"/>
-		        <img width="150" src="images/logo-expressjs.png"/>
-		        <img width="150" src="images/logo-react.png"/>
-		        <img width="150" src="images/logo-heroku.png"/>
-		    </div>
-		    <div class="mt-3">
-		        <img width="150" src="images/logo-git.png"/>
-		        <img width="150" src="images/logo-sublime-text-3.png"/>
-		        <img width="150" src="images/logo-postman.png"/>
-		        <img width="150" src="images/logo-gitlab-ci-cd.png"/>
-		    </div>
+			<div id="gmap_canvas" class="col-md-12 my-4"></div>
+				<h4 class="text-center my-4">Visit Us</h4>
+				<iframe id="googlemap" src="https://maps.google.com/maps?hl=en&amp;q=liwasang bonifacio&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">...</iframe>
 		</div>
 		
+		
 
+		
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

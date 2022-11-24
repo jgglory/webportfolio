@@ -9,16 +9,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#img-size1 {
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 5px;
-	width: 650px;
+#googlemap {
+	height: 60vh;
+	width: 100%;
 }
 
-#img-size2 {
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 5px;
-	width: 650px;
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
 }
