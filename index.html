@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="./index.css">
 	</head>
 
-	<body class="text-center">
+	<body class="text-center container-fluid">
 
-		<div class="bg-secondary fixed-top">
+		<div class="text-center bg-secondary fixed-top d-block container-fluid">
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
 					<a class="nav-link active text-light" href="#top">Home</a>
@@ -37,7 +37,7 @@
 			</ul>
 		</div>
 
-		<div class="text-center mt-5 rows d-flex-row d-flex-md-column" id="aboutme">
+		<div class="bg-light text-center mt-5 rows d-flex-row d-flex-md-column container-fluid" id="aboutme">
 			<img width="400" src="https://media.istockphoto.com/id/1363246495/photo/angry-office-worker-shouting-at-the-computer.jpg?s=612x612&w=0&k=20&c=n-fqA7YNtVFccdMI7t-tdn9-Ts5SiKe6oaMGBPDlSEY=" class="rounded-circle img-fluid"/>
 			<h1 class="mt-5">Cedrick Glory</h1>
 			<h2>web developer</h2>
@@ -47,8 +47,8 @@
 		<!-- Projects start -->
 		<h2 class="text-center mt-5" id="projects">Projects</h2>
 		
-	    <div class="card-deck p-5 bg-secondary justify-content-center">
-	    	<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+	    <div class="card-deck bg-secondary justify-content-center container-fluid">
+	    	<div class="card col-md-3 bg-dark my-5 pt-2">
 		    	<a href="https://www.amazon.com/" target="_blank"><img src="https://i.pinimg.com/originals/e3/ad/3a/e3ad3a38b788283539623f7232af1189.jpg" class="card-img-top"></a>
 		    	<div class="card-body text-light">
 		    		<h5 class="card-title">E-commerce</h5>
@@ -56,7 +56,7 @@
     			</div>
 			</div>
 
-			<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+			<div class="card col-md-3 bg-dark my-5 pt-2">
 		    	<a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.dribbble.com/users/850106/screenshots/4495136/media/99bf4015a979abab4b2689c17b884ef4.png?compress=1&resize=400x300" class="card-img-top"></a>
 		    	<div class="card-body text-light">
 		    		<h5 class="card-title">Online Social Media Platform</h5>
@@ -64,7 +64,7 @@
     			</div>
 			</div>
 
-			<div class="card col-md-3 bg-dark my-5 pt-2" style="width: 18rem;">
+			<div class="card col-md-3 bg-dark my-5 pt-2">
 		    	<a href="https://www.netflix.com/browse" target="_blank"><img src="https://i.pinimg.com/originals/41/f0/6e/41f06ef73c50b9771360dc1a858750fd.jpg" class="card-img-top"></a>
 		    	<div class="card-body text-light">
 		    		<h5 class="card-title">Online Video Streaming</h5>
@@ -75,7 +75,7 @@
 	    <!-- Projects end -->
 		
 	    <!-- Tools start-->
-		<div class="bg-light row flex-column jumbotron" id="tools">
+		<div class="bg-light row flex-column jumbotron container-fluid" id="tools">
 			<h1 class="text-center">Tools</h1>
 			<div class="row justify-content-center py-3">
 				<div class="col-md-3 col-lg-2 mx-4 my-3">
@@ -134,9 +134,9 @@
 		<!-- Tools End -->
 
 		<!-- Contact start -->
-		<div class="row flex-column jumbotron" id="contact">
-			<div class="row justify-content-center py-3 bg-secondary">
-				<div class="col-md-6 col-lg-4 my-3">
+		<div class="d-flex-row row flex-column text-light" id="contact container-fluid">
+			<div class="row justify-content-center py-3 p-3 bg-secondary">
+				<div class="col-md-6 my-3">
 					<h4 class="text-center">Get in touch</h4>
 					<div class="row justify-content-center">
 						<div class="col-md-12 py-2">
@@ -148,8 +148,9 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 col-lg-4 my-3">
+				<div class="col-md-6 col my-3">
 					<form>
+						<h4 class="text-center">Message Us</h4>
 						<div class="form-group">
 							<label for="name">Name</label>
 							<input type="text" class="form-control" id="name">
@@ -189,11 +190,17 @@
 		</div>
 		<!-- contact end -->
 		
-		<div>
+		<div class="container-fluid">
 			<div id="gmap_canvas" class="col-md-12 my-4"></div>
 				<h4 class="text-center my-4">Visit Us</h4>
 				<iframe id="googlemap" src="https://maps.google.com/maps?hl=en&amp;q=liwasang bonifacio&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">...</iframe>
 		</div>
+
+		<footer class="mt-3 p-3 bg-secondary text-light container-fluid">
+			<h4>Cedrick Glory</h4>
+			<p>Full Stack Web Developer</p>
+			<p>&#9400; All Rights Reserved 2022</p>
+		</footer>
 		
 		
 
