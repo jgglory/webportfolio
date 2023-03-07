@@ -1,212 +1,144 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-		<title>Capstone 1</title>
-
-		<!-- Google Fonts -->
+		<link rel="stylesheet" type="text/css" href="src/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-		<!-- External CSS -->
-		<link rel="stylesheet" href="./index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/7f047efd6c.js" crossorigin="anonymous"></script>
+		<title>Portfolio</title>
 	</head>
-
-	<body class="text-center container-fluid">
-
-		<div class="text-center bg-secondary fixed-top d-block container-fluid">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link active text-light" href="#top">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#aboutme">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#tools">Tools</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#contact">Contact Me</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="bg-light text-center mt-5 rows d-flex-row d-flex-md-column container-fluid" id="aboutme">
-			<img width="400" src="https://media.istockphoto.com/id/1363246495/photo/angry-office-worker-shouting-at-the-computer.jpg?s=612x612&w=0&k=20&c=n-fqA7YNtVFccdMI7t-tdn9-Ts5SiKe6oaMGBPDlSEY=" class="rounded-circle img-fluid"/>
-			<h1 class="mt-5">Cedrick Glory</h1>
-			<h2>web developer</h2>
-			<p class="container text-center">A Full Stack Web Developer is a skilled computer programmer who handles both front and back end coding. At the front end, the developer will use a combination of CSS, HTML, and JavaScript for building everything that a user sees or interacts with on a website, and on the back-end, these web developers will develop server, application, and databases which frame the website foundational structure.</p>
-		</div>
-
-		<!-- Projects start -->
-		<h2 class="text-center mt-5" id="projects">Projects</h2>
-		
-	    <div class="card-deck bg-secondary justify-content-center container-fluid">
-	    	<div class="card col-md-3 bg-dark my-5 pt-2">
-		    	<a href="https://www.amazon.com/" target="_blank"><img src="https://i.pinimg.com/originals/e3/ad/3a/e3ad3a38b788283539623f7232af1189.jpg" class="card-img-top"></a>
-		    	<div class="card-body text-light">
-		    		<h5 class="card-title">E-commerce</h5>
-		    		<p class="card-text">Amazing.com, Inc. (/əˈmāziNG/) is a Mercurian universal technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.</p>
-    			</div>
-			</div>
-
-			<div class="card col-md-3 bg-dark my-5 pt-2">
-		    	<a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.dribbble.com/users/850106/screenshots/4495136/media/99bf4015a979abab4b2689c17b884ef4.png?compress=1&resize=400x300" class="card-img-top"></a>
-		    	<div class="card-body text-light">
-		    		<h5 class="card-title">Online Social Media Platform</h5>
-		    		<p class="card-text">Fakebook is an online social media and social networking service owned by Martian company LaMeta Platforms.</p>
-    			</div>
-			</div>
-
-			<div class="card col-md-3 bg-dark my-5 pt-2">
-		    	<a href="https://www.netflix.com/browse" target="_blank"><img src="https://i.pinimg.com/originals/41/f0/6e/41f06ef73c50b9771360dc1a858750fd.jpg" class="card-img-top"></a>
-		    	<div class="card-body text-light">
-		    		<h5 class="card-title">Online Video Streaming</h5>
-		    		<p class="card-text">Nextfix, Inc. is a Universal subscription streaming service and production company based in planet Venus, Milkyway Galaxy.</p>
-    			</div>
-			</div>
-	    </div>
-	    <!-- Projects end -->
-		
-	    <!-- Tools start-->
-		<div class="bg-light row flex-column jumbotron container-fluid" id="tools">
-			<h1 class="text-center">Tools</h1>
-			<div class="row justify-content-center py-3">
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="text-center my-3">Front End</h3>
-					<div class="row justify-content-center">
-						<div class="col-6">
-							<img src="images/logo-html5.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-css3.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-bootstrap.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-javascript.png" class="img-fluid">
-						</div>
-					</div>
+	<body>
+		<section class="hero">
+			<nav>
+				<img class="logo" src="src/images/jcg.png" alt="Cedrick's logo"/>
+				<ul id="nav-list">
+					<li><a href="#about-me">About me</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact me</a></li> 
+				</ul>
+				<button class="hamburger" id="hamburger">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+			<div class="hero-area">
+				<div class="hero-text">
+					<h1>Cedrick Glory</h1>
+					<p>Full Stack Developer</p>
+					<div class="button"><a href="#about-me">About me</a></div>
 				</div>
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="text-center my-3">MERN</h3>
-					<div class="row justify-content-center">
-						<div class="col-6">
-							<img src="images/logo-mongodb.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-expressjs.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-react.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-nodejs.png" class="img-fluid">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="text-center my-3">Other Tools</h3>
-					<div class="row justify-content-center">
-						<div class="col-6">
-							<img src="images/logo-heroku.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-git.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-postman.png" class="img-fluid">
-						</div>
-						<div class="col-6">
-							<img src="images/logo-sublime-text-3.png" class="img-fluid">
-						</div>
-					</div>
+				<div class="socials">					
+					<div><a href="https://www.facebook.com/cedrick.glory" target="_blank" class="social">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+					</a></div>					
+					<div><a href="https://www.linkedin.com/in/cedrick-glory-16a762229/" target="_blank"  class="social">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+					</a></div>					
+					<div><a href="https://github.com/jgglory" target="_blank" class="social">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+					</a></div>
 				</div>
 			</div>
-		</div>
-		<!-- Tools End -->
-
-		<!-- Contact start -->
-		<div class="d-flex-row row flex-column text-light container-fluid" id="contact">
-			<div class="row justify-content-center py-3 p-3 bg-secondary">
-				<div class="col-md-6 my-3">
-					<h4 class="text-center">Get in touch</h4>
-					<div class="row justify-content-center">
-						<div class="col-md-12 py-2">
-							<a href="https://www.facebook.com/" target="_blank"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" class="img-fluid"></a>
-						</div>
-						<div class="col-md-12 py-2">
-							<a href="https://ph.linkedin.com/" target="_blank"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" class="img-fluid"></a>
-						</div>
-					</div>
+		</section>
+		<section class="sub-section" id="about-me">
+			<div class="information">
+				<h2>About Me</h2>
+				<p>Hello, My name is Cedrick Glory. I am a Full Stack Web Developer. I've learned most of my programming skills through Zuitt Coding Bootcamp. I am very passionate about coding and hope that someday I'll be able to revolutionize the tech industry in the Philippines </p>
+			</div>
+			<div class="headshot-containter">
+				<img class="headshot "src="src/images/ced.png" alt="ced headshot"/>
+			</div>
+		</section>
+		<section class="sub-section-alt" id="projects">
+			<h2>Projects</h2>
+			<div class="project-container">
+				<div class="project-card">
+					<img class="project-image" src="src/images/project1.png" alt="Project One Image" />
+					<h3>Project One</h3>
+					<p class="sub-text">Lorem ipsum keme keme keme 48 years paminta jutay tamalis emena gushung wasok at ang nang kemerloo ang ang ganda lang at lorem ipsum keme keme daki effem ang at nang at tamalis Mike.</p>
+					<hr/>
+					<p class="sub-text"><a class="project-link" href="https://capstone3-glory.vercel.app/">View here</a></p>
 				</div>
-
-				<div class="col-md-6 col my-3">
-					<form>
-						<h4 class="text-center">Message Us</h4>
-						<div class="form-group">
-							<label for="name">Name</label>
-							<input type="text" class="form-control" id="name">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>
-						<div class="form-group">
-							<label for="message">Message</label>
-							<textarea class="form-control" id="message" rows="3"></textarea>
-						</div>
-						
-						<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send</button>
-						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for reaching out!</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body text-dark">
-										<p>Message Successfully Sent</p>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-									</div>
-								</div>
+				<div class="project-card">
+					<img class="project-image" src="src/images/project1.png" alt="Project Two Image" />
+					<h3>Project Two</h3>
+					<p class="sub-text">Lorem ipsum keme keme keme 48 years paminta jutay tamalis emena gushung wasok at ang nang kemerloo ang ang ganda lang at lorem ipsum keme keme daki effem ang at nang at tamalis Mike.</p>
+					<hr/>
+					<p class="sub-text"><a class="project-link" href="https://capstone3-glory.vercel.app/">View here</a></p>
+				</div>
+				<div class="project-card">
+					<img class="project-image" src="src/images/project1.png" alt="Project Three Image" />
+					<h3>Project Three</h3>
+					<p class="sub-text">Lorem ipsum keme keme keme 48 years paminta jutay tamalis emena gushung wasok at ang nang kemerloo ang ang ganda lang at lorem ipsum keme keme daki effem ang at nang at tamalis Mike.</p>
+					<hr/>
+					<p class="sub-text"><a class="project-link" href="https://capstone3-glory.vercel.app/">View here</a></p>
+				</div>
+			</div>
+		</section>
+			
+		<section class="tools">
+			<div class="bg-light row flex-column jumbotron container-fluid" id="tools">
+				<h2>Tools</h1>
+				<div class="row justify-content-center py-3">
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3>Front End</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="src/images/logo-html5.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-css3.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-bootstrap.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-javascript.png" class="img-fluid">
 							</div>
 						</div>
-					</form>
+					</div>
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3>MERN</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="src/images/logo-mongodb.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-expressjs.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-react.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-nodejs.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3>Other Tools</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="src/images/logo-heroku.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-git.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-postman.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="src/images/logo-sublime-text-3.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- contact end -->
-		
-		<div class="container-fluid">
-			<div id="gmap_canvas" class="col-md-12 my-4"></div>
-				<h4 class="text-center my-4">Visit Us</h4>
-				<iframe id="googlemap" src="https://maps.google.com/maps?hl=en&amp;q=liwasang bonifacio&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">...</iframe>
-		</div>
-
-		<footer class="mt-3 p-3 bg-secondary text-light container-fluid">
-			<h4>Cedrick Glory</h4>
-			<p>Full Stack Web Developer</p>
-			<p>&#9400; All Rights Reserved 2022</p>
+		</section>
+		<footer id="contact">
+			<h2>Contact me</h2>
+			<p>cedrickglory14@gmail.com</p>
 		</footer>
 		
-		
-
-		
-
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		<script src="src/app.js"></script>
 	</body>
 </html>
